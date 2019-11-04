@@ -1,0 +1,16 @@
+# Node Modules dir
+node_modules
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### JS maps ###
+*.js.map
+
+### Package lock ###
+package-lock.json
+
+### Custom Files ###
+dist/
+accessibility-reports/

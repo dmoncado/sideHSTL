@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+// Vendors (Imported first so they can be overriden)
+@import
+	'vendors/bootstrap',	// Bootstrap
+	'vendors/normalize',	// Normalize CSS
+	'vendors/slick',		// Slick
+	'vendors/slick-theme';	// Slick Theme
+
+// Abstracs (utilities)
+@import
+	'abstracts/variables',	// Sass Variables
+	'abstracts/mixins';		// Sass Mixins
+
+// Bourbon
+@import
+	'bourbon/bourbon.scss';	// Bourbon Library
+
+// Base
+@import
+	'base/fonts',			// Fonts
+	'base/global',			// Global Styles
+	'base/helpers',			// Helper Styles
+	'base/typography';		// Typography
+
+// Components
+@import
+	'components/buttons',	// Buttons
+	'components/carousel',	// Carousel
+	'components/slider';	// Slider
+
+// Layout
+@import
+	'layout/footer',		// Footer specific styles
+	'layout/nav',			// Nav specific styles
+	'layout/header';		// Header specific styles
+
+// Page
+@import
+	'pages/home';			// Page specific styles
