@@ -3,9 +3,25 @@
 // -----------------------------------------------------------------------------
 
 .navbar {
-	padding: 20px;
+	padding: 12px 0;
 	background: #ccc;
-	color: #fff;
+
+	.container {
+
+		.navbar-collapse {
+
+			.navbar-nav {
+
+				li {
+
+					a {
+						color: #fff;
+						padding: 0 25px;
+					}
+				}
+			}
+		}
+	}
 }
 
 .fixed-top {

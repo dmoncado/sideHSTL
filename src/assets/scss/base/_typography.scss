@@ -3,6 +3,12 @@
 // -----------------------------------------------------------------------------
 @import "bourbon/bourbon";
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-stack-helvetica;
+	letter-spacing: -1.5px;
+}
+
 body {
-    color: $darkest-grey;
+	color: $darkest-grey;
+	font-family: 'PT Mono', monospace;
 }
