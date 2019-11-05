@@ -2,10 +2,17 @@
 // Navigation
 // -----------------------------------------------------------------------------
 
+.navbar-toggler-icon {
+	background-image: url('../images/svg/hamburger-menu.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .navbar {
 	padding: 0;
 	background-color: $dark-navy;
 	height: 80px;
+	@include padding(null 20px);
 
 	.container {
 
@@ -23,6 +30,13 @@
 
 					a {
 						color: #fff;
+					}
+
+					> .nav-link {
+
+						&::after {
+							vertical-align: 3px;
+						}
 					}
 
 					&:hover {
@@ -47,15 +61,15 @@
 						li {
 
 							.dropdown-item {
-								padding: 5px 0;
-							}
+								padding: 10px 33px;
 
-							&:hover {
-								background-color: lighten($light-navy, 5%);
-							}
+								&:hover {
+									background-color: lighten($light-navy, 5%);
+								}
 
-							&.active {
-								background-color: lighten($light-navy, 5%);
+								&.active {
+									background-color: lighten($light-navy, 5%);
+								}
 							}
 						}
 					}
