@@ -3,9 +3,11 @@
 // -----------------------------------------------------------------------------
 
 .navbar {
-    padding: 20px;
+	padding: 20px;
+	background: #ccc;
+	color: #fff;
 }
 
 .fixed-top {
-    border-bottom: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
 }
