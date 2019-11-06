@@ -5,10 +5,15 @@
 .visual-design-hero {
 	background-image: url('../images/visual-design-hero.jpg');
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	color: #fff;
-	height: 400px;
+	height: 300px;
 	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 400px;
+	}
 
 	&::after {
 		content: " ";
@@ -23,7 +28,7 @@
 	}
 
 	&__title {
-		background-color: rgba(15, 11, 56, 0.4);
+		background-color: rgba(15, 11, 56, 0.25);
 		padding: 20px 0;
 		position: absolute;
 		bottom: 0;
@@ -31,8 +36,11 @@
 		z-index: 100;
 
 		h1 {
-			font-size: 68px;
-			margin: 0;
+			font-size: 48px;
+
+			@include media-breakpoint-up(md) {
+				font-size: 68px;
+			}
 		}
 	}
 }
@@ -40,24 +48,48 @@
 .visual-design-intro {
 	background-color: $dark-navy;
 	color: $light-grey;
+	padding-top: 80px;
 
 	.container {
 		position: relative;
 
-		&::after {
+		&::before {
 			content: "";
 			position: absolute;
-			right: 0;
-			top: -100px;
-			height: 100px;
-			width: 100px;
+			right: 20px;
+			top: -120px;
+			height: 80px;
+			width: 80px;
 			border-radius: 50%;
 			border: 5px solid $dark-navy;
 			z-index: 200;
 			background-color: #fff;
 			background-image: url('../images/svg/visual-design-badge.svg');
-			background-size: 55px;
+			background-size: 60%;
 			background-position: center 15px;
+			background-repeat: no-repeat;
+
+			@include media-breakpoint-up(md) {
+				top: -130px;
+				right: 0;
+				height: 100px;
+				width: 100px;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: -50px;
+			left: 50%;
+			z-index: 200;
+			width: 30px;
+			height: 30px;
+			margin-left: -15px;
+			background-image: url('../images/svg/arrow-down.svg');
+			background-size: 25px;
+			background-position: center 10px;
 			background-repeat: no-repeat;
 		}
 	}
@@ -70,6 +102,7 @@
 
 		&__body {
 			color: #fff;
+			margin-bottom: 50px;
 
 			h2 {
 				@include hr-rule($light-navy);
@@ -82,6 +115,7 @@
 
 			@include media-breakpoint-up(lg) {
 				width: 50%;
+				margin-bottom: 0;
 			}
 		}
 

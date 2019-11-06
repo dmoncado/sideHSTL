@@ -11,10 +11,12 @@
 .navbar {
 	padding: 0;
 	background-color: $dark-navy;
+	border-bottom: 1px solid $light-navy;
 	padding: 30px 15px;
 
 	@include media-breakpoint-up(lg) {
 		padding: 0;
+		border-bottom: 0;
 	}
 
 	.container {
