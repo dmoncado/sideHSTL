@@ -8,3 +8,19 @@
 	margin-bottom: 0;
 	padding-left: 0;
 }
+
+// Horizontal rule under headings
+@mixin hr-rule($color) {
+	position: relative;
+	padding-bottom: 25px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 2px;
+		width: 50px;
+		background-color: $color;
+	}
+}
