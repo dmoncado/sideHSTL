@@ -5,7 +5,14 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack-helvetica;
+	font-weight: bold;
 	letter-spacing: -1.5px;
+	margin: 0;
+}
+
+h2 {
+	margin-bottom: 25px;
+	letter-spacing: -0.75px;
 }
 
 body {
