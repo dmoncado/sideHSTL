@@ -24,3 +24,32 @@
 		background-color: $color;
 	}
 }
+
+@mixin brand-btn {
+	display: inline-block;
+	border: 2px solid $dark-navy;
+	font-family: $font-stack-helvetica;
+	color: $dark-navy;
+	@include font-size(12px);
+	border-radius: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 9px 30px;
+
+	&:hover {
+		text-decoration: none;
+		background-color: $dark-navy;
+		color: #fff;
+	}
+}
+
+@mixin price-badge {
+	display: inline-block;
+	background-color: $light-grey;
+	font-family: $font-stack-helvetica;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 8px 18px;
+	color: $price-green;
+	margin-bottom: 0;
+}
