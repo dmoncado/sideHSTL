@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------------------
+// Web Developement page
+// -----------------------------------------------------------------------------
+
+.web-development-hero {
+	background-image: url('../images/web-development-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 300px;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 400px;
+	}
+
+	&::after {
+		content: " ";
+		z-index: 10;
+		display: block;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(27,20,100,1) 100%);
+	}
+
+	&__title {
+		background-color: rgba(15, 11, 56, 0.25);
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 100;
+	}
+}
+
+.web-development-intro {
+	background-color: $dark-navy;
+	color: $light-grey;
+	padding-top: 60px;
+
+	@include media-breakpoint-up(md) {
+		padding-top: 80px;
+	}
+
+	.container {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 20px;
+			top: -100px;
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			border: 5px solid $dark-navy;
+			z-index: 200;
+			background-color: #fff;
+			background-image: url('../images/svg/web-development-badge.svg');
+			background-size: 65%;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			@include media-breakpoint-up(md) {
+				top: -130px;
+				right: 0;
+				height: 100px;
+				width: 100px;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: -50px;
+			left: 50%;
+			z-index: 200;
+			width: 30px;
+			height: 30px;
+			margin-left: -15px;
+			background-image: url('../images/svg/arrow-down.svg');
+			background-size: 25px;
+			background-position: center 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__contents {
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+
+		&__body {
+			color: #fff;
+			margin-bottom: 50px;
+
+			h2 {
+				@include hr-rule($light-navy);
+			}
+
+			p {
+				color: $light-grey;
+				padding-right: 50px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+				margin-bottom: 0;
+			}
+		}
+
+		&__visual {
+
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+				padding-left: 50px;
+			}
+		}
+	}
+}
+
+.web-development-body {
+	background-color: $light-grey;
+
+	h2 {
+		color: $dark-navy;
+		margin-bottom: 50px;
+	}
+
+	// Override BS
+	.card-deck {
+		display: block;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+
+		.card {
+			border: 0;
+			background: none;
+			margin: 0 0 50px 0;
+
+			@include media-breakpoint-up(lg) {
+				flex: initial;
+				width: 50%;
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: 33.33%;
+			}
+		}
+	}
+
+	.web-development-card {
+		@include service-card;
+
+		&--website-design {
+			&::after {
+				background-image: url('../images/svg/services-website-design.svg');
+				background-size: 25px;
+			}
+		}
+
+		&--website-development {
+			&::after {
+				background-image: url('../images/svg/services-website-development.svg');
+			}
+		}
+
+		&--landing-pages {
+			&::after {
+				background-image: url('../images/svg/services-landing-pages.svg');
+				background-size: 25px;
+			}
+		}
+
+		&--marketing-sites {
+			&::after {
+				background-image: url('../images/svg/services-marketing-sites.svg');
+				background-size: 25px;
+			}
+		}
+
+		&--email-templates {
+			&::after {
+				background-image: url('../images/svg/services-email-templates.svg');
+			}
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+			&__heading {
+
+				h3 {
+					@include font-size(28px);
+					@include hr-rule($light-grey);
+					color: $dark-navy;
+				}
+			}
+
+			&__body {
+				margin-bottom: 30px;
+			}
+
+			&__footer {
+				display: flex;
+				justify-content: space-between;
+
+				a {
+					@include brand-btn;
+				}
+
+				p {
+					@include price-badge;
+				}
+			}
+		}
+	}
+}
