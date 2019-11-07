@@ -1,0 +1,139 @@
+// -----------------------------------------------------------------------------
+// Portfolio page
+// -----------------------------------------------------------------------------
+
+.portfolio-hero {
+	background-image: url('../images/portfolio-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 250px;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 350px;
+	}
+
+	&::after {
+		content: " ";
+		z-index: 10;
+		display: block;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(27,20,100,1) 100%);
+	}
+
+	&__title {
+		background-color: rgba(15, 11, 56, 0.25);
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 100;
+
+		.container {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				right: 20px;
+				bottom: -58px;
+				height: 80px;
+				width: 80px;
+				border-radius: 50%;
+				border: 5px solid $dark-navy;
+				z-index: 200;
+				background-color: #fff;
+				background-image: url('../images/svg/portfolio-badge.svg');
+				background-size: 60%;
+				background-position: center 24px;
+				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(md) {
+					bottom: -67px;
+					right: 0;
+					height: 100px;
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+
+.portfolio-body {
+	background-color: $light-grey;
+
+	h2 {
+		color: $dark-navy;
+		margin-bottom: 50px;
+	}
+
+	// Override BS
+	.card-deck {
+		display: block;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+
+		.card {
+			border: 0;
+			background: none;
+			margin: 0 0 50px 0;
+
+			@include media-breakpoint-up(lg) {
+				flex: initial;
+				width: 50%;
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: 33.33%;
+			}
+		}
+	}
+
+	.portfolio-card {
+		@include portfolio-card;
+
+		&__content {
+
+			&__title {
+				padding: 20px 30px;
+				display: flex;
+				justify-content: space-between;
+
+				&__details {
+
+					h3 {
+						margin-bottom: 5px;
+					}
+
+					p {
+						margin-bottom: 0;
+					}
+				}
+
+				&__action {
+					display: flex;
+					align-items: center;
+
+					a {
+						display: block;
+						width: 25px;
+						transition: transform 0.3s ease-out;
+
+
+						&:hover {
+							transform: translateX(4px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

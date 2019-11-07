@@ -8,11 +8,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	color: #fff;
-	height: 300px;
+	height: 250px;
 	position: relative;
 
 	@include media-breakpoint-up(md) {
-		height: 400px;
+		height: 350px;
 	}
 
 	&::after {
@@ -34,13 +34,41 @@
 		bottom: 0;
 		width: 100%;
 		z-index: 100;
+
+		.container {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				right: 20px;
+				bottom: -58px;
+				height: 80px;
+				width: 80px;
+				border-radius: 50%;
+				border: 5px solid $dark-navy;
+				z-index: 200;
+				background-color: #fff;
+				background-image: url('../images/svg/photo-and-video-badge.svg');
+				background-size: 60%;
+				background-position: center 24px;
+				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(md) {
+					bottom: -67px;
+					right: 0;
+					height: 100px;
+					width: 100px;
+				}
+			}
+		}
 	}
 }
 
 .photo-and-video-intro {
 	background-color: $dark-navy;
 	color: $light-grey;
-	padding-top: 60px;
+
 
 	@include media-breakpoint-up(md) {
 		padding-top: 80px;
@@ -48,30 +76,6 @@
 
 	.container {
 		position: relative;
-
-		&::before {
-			content: "";
-			position: absolute;
-			right: 20px;
-			top: -100px;
-			height: 80px;
-			width: 80px;
-			border-radius: 50%;
-			border: 5px solid $dark-navy;
-			z-index: 200;
-			background-color: #fff;
-			background-image: url('../images/svg/photo-and-video-badge.svg');
-			background-size: 60%;
-			background-position: center 24px;
-			background-repeat: no-repeat;
-
-			@include media-breakpoint-up(md) {
-				top: -130px;
-				right: 0;
-				height: 100px;
-				width: 100px;
-			}
-		}
 
 		&::after {
 			content: "";

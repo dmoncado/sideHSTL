@@ -28,5 +28,9 @@ hr {
 }
 
 a {
-	color: $light-navy;
+	color: $dark-navy;
+
+	&:hover {
+		color: lighten($dark-navy, 15%);
+	}
 }
