@@ -144,9 +144,7 @@
 		.card {
 			border: 0;
 			background: none;
-			margin-bottom: 50px;
-			margin-right: 0;
-			margin-left: 0;
+			margin: 0 0 50px 0;
 
 			@include media-breakpoint-up(lg) {
 				flex: initial;
@@ -160,38 +158,54 @@
 	}
 
 	.visual-design-card {
-		margin-right: 15px;
-		margin-left: 15px;
+		@include service-card;
+
+		&--logos {
+			&::after {
+				background-image: url('../images/svg/services-logos.svg');
+			}
+		}
+
+		&--branding {
+			&::after {
+				background-image: url('../images/svg/services-branding.svg');
+			}
+		}
+
+		&--illustration {
+			&::after {
+				background-image: url('../images/svg/services-illustration.svg');
+			}
+		}
+
+		&--vector-artwork {
+			&::after {
+				background-image: url('../images/svg/services-vector-artwork.svg');
+			}
+		}
+
+		&--website-design {
+			&::after {
+				background-image: url('../images/svg/services-website-design.svg');
+			}
+		}
+
+		&--iconography {
+			&::after {
+				background-image: url('../images/svg/services-iconography.svg');
+			}
+		}
 
 		&__content {
-			border: 2px solid $dark-navy;
-			background-color: #fff;
-			border-radius: 8px;
-			padding: 30px;
-			box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
-			position: relative;
-
-			&::after {
-				content: "";
-				position: absolute;
-				right: 30px;
-				top: -33px;
-				height: 60px;
-				width: 60px;
-				border-radius: 50%;
-				border: 3px solid $dark-navy;
-				z-index: 200;
-				background-color: #fff;
-				background-image: url('../images/svg/visual-design-badge.svg');
-				background-size: 60%;
-				background-position: center 10px;
-				background-repeat: no-repeat;
-			}
+			display: flex;
+			flex-direction: column;
+			height: 100%;
 
 			&__heading {
 
 				h3 {
 					@include font-size(28px);
+					@include hr-rule($light-grey);
 					color: $dark-navy;
 				}
 			}
