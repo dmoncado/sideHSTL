@@ -187,12 +187,39 @@
 		&--website-design {
 			&::after {
 				background-image: url('../images/svg/services-website-design.svg');
+				background-size: 25px;
 			}
 		}
 
 		&--iconography {
 			&::after {
 				background-image: url('../images/svg/services-iconography.svg');
+			}
+		}
+
+		&--business-cards {
+			&::after {
+				background-image: url('../images/svg/services-business-cards.svg');
+			}
+		}
+
+		&--stationary {
+			&::after {
+				background-image: url('../images/svg/services-stationary.svg');
+				background-size: 25px;
+			}
+		}
+
+		&--flyers {
+			&::after {
+				background-image: url('../images/svg/services-flyers.svg');
+				background-size: 25px;
+			}
+		}
+
+		&--brochures {
+			&::after {
+				background-image: url('../images/svg/services-brochures.svg');
 			}
 		}
 
