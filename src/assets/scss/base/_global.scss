@@ -34,3 +34,27 @@ a {
 		color: lighten($dark-navy, 15%);
 	}
 }
+
+// Override BS
+.card-deck {
+	display: block;
+
+	@include media-breakpoint-up(lg) {
+		display: flex;
+	}
+
+	.card {
+		border: 0;
+		background: none;
+		margin: 0 0 50px 0;
+
+		@include media-breakpoint-up(lg) {
+			flex: initial;
+			width: 50%;
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: 33.33%;
+		}
+	}
+}
