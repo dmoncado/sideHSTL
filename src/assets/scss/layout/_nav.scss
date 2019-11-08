@@ -22,6 +22,10 @@
 
 		.navbar-brand {
 			padding: 0;
+
+			img {
+				max-width: 160px;
+			}
 		}
 
 		.navbar-collapse {
