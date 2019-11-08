@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// Landing Page
+// -----------------------------------------------------------------------------
+
+.landing-page-hero {
+	background-image: url('../images/landing-page-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 250px;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 350px;
+	}
+
+	&::after {
+		content: " ";
+		z-index: 10;
+		display: block;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(27,20,100,1) 100%);
+	}
+
+	&__title {
+		background-color: rgba(15, 11, 56, 0.25);
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 100;
+	}
+}
+
+.landing-page-body {
+	background-color: $light-grey;
+
+	.landing-page-carousel {
+
+		> div {
+			border: 2px solid $dark-navy;
+			box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+			border-radius: 8px;
+			overflow: hidden;
+		}
+	}
+}
