@@ -72,65 +72,41 @@
 		color: $dark-navy;
 		margin-bottom: 50px;
 	}
+}
 
-	// Override BS
-	.card-deck {
-		display: block;
+.portfolio-card {
+	@include portfolio-card;
 
-		@include media-breakpoint-up(lg) {
+	&__content {
+
+		&__title {
+			padding: 20px 30px;
 			display: flex;
-		}
+			justify-content: space-between;
 
-		.card {
-			border: 0;
-			background: none;
-			margin: 0 0 50px 0;
+			&__details {
 
-			@include media-breakpoint-up(lg) {
-				flex: initial;
-				width: 50%;
-			}
-
-			@include media-breakpoint-up(xl) {
-				width: 33.33%;
-			}
-		}
-	}
-
-	.portfolio-card {
-		@include portfolio-card;
-
-		&__content {
-
-			&__title {
-				padding: 20px 30px;
-				display: flex;
-				justify-content: space-between;
-
-				&__details {
-
-					h3 {
-						margin-bottom: 5px;
-					}
-
-					p {
-						margin-bottom: 0;
-					}
+				h3 {
+					margin-bottom: 5px;
 				}
 
-				&__action {
-					display: flex;
-					align-items: center;
+				p {
+					margin-bottom: 0;
+				}
+			}
 
-					a {
-						display: block;
-						width: 25px;
-						transition: transform 0.3s ease-out;
+			&__action {
+				display: flex;
+				align-items: center;
+
+				a {
+					display: block;
+					width: 25px;
+					transition: transform 0.3s ease-out;
 
 
-						&:hover {
-							transform: translateX(4px);
-						}
+					&:hover {
+						transform: translateX(4px);
 					}
 				}
 			}

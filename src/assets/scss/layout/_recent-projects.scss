@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// Recent Projects
+// -----------------------------------------------------------------------------
+
+.recent-projects {
+	background-color: #e6e6e6;
+
+	.container {
+
+		.card-deck {
+
+			.card {
+				@include media-breakpoint-up(md) {
+					width: 50%;
+				}
+
+				.portfolio-card {
+
+					&__content {
+
+						&__title {
+
+							&__details {
+
+							}
+
+							&__action {
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
