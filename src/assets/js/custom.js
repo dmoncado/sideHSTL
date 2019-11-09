@@ -12,12 +12,42 @@ $(document).ready(function() {
 	$('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
 	$('.dropdown-menu > li > a[href="'+pathname+'"]').addClass('active');
 
-	// Slick initiation
+	// Slick initiations
 	$('.landing-page-carousel').slick({
 		dots: true,
 		mobileFirst: true,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1
+	});
+
+	$('.about-page-carousel').slick({
+		dots: false,
+		mobileFirst: true,
+		infinite: true,
+		responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+				}
+			}
+		]
 	});
 });

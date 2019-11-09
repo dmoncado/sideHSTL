@@ -1,3 +1,140 @@
 // -----------------------------------------------------------------------------
 // About
 // -----------------------------------------------------------------------------
+
+.about-hero {
+	background-image: url('../images/portfolio-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 250px;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 350px;
+	}
+
+	&::after {
+		content: " ";
+		z-index: 10;
+		display: block;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(27,20,100,1) 100%);
+	}
+
+	&__title {
+		background-color: rgba(15, 11, 56, 0.25);
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 100;
+
+		.container {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				right: 20px;
+				bottom: -58px;
+				height: 80px;
+				width: 80px;
+				border-radius: 50%;
+				border: 5px solid $dark-navy;
+				z-index: 200;
+				background-color: #fff;
+				background-image: url('../images/svg/services-headshots.svg');
+				background-size: 55%;
+				background-position: center 24px;
+				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(md) {
+					bottom: -67px;
+					right: 0;
+					height: 100px;
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+
+.about-body {
+	background-color: $light-grey;
+
+	&__intro {
+		padding-top: 20px;
+
+		h2 {
+			color: $dark-navy;
+			@include hr-rule(#e6e6e6);
+		}
+
+		.row {
+			margin-bottom: 80px;
+
+			@include media-breakpoint-up(lg) {
+
+				> div {
+
+					&:first-child {
+						padding-right: 40px;
+					}
+
+					&:last-child {
+						padding-left: 40px;
+					}
+				}
+			}
+		}
+
+		&__details {
+			margin-bottom: 40px;
+			@include make-col-ready();
+
+			@include media-breakpoint-up(lg) {
+				@include make-col(6);
+				margin-bottom: 0;
+			}
+
+			a {
+				@include brand-btn;
+				margin-top: 15px;
+			}
+		}
+
+		&__visual {
+			margin-bottom: 40px;
+			@include make-col-ready();
+
+			@include media-breakpoint-up(lg) {
+				@include make-col(6);
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__logo-strip {
+
+		h2 {
+			color: $dark-navy;
+			margin-bottom: 50px;
+		}
+
+		.about-page-carousel {
+
+			> div {
+
+				img {
+					padding: 0 25px 0 25px;
+				}
+			}
+		}
+	}
+}
