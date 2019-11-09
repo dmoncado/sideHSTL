@@ -110,11 +110,11 @@
 
 			p {
 				color: $light-grey;
-				padding-right: 50px;
 			}
 
 			@include media-breakpoint-up(lg) {
 				width: 50%;
+				padding-right: 50px;
 				margin-bottom: 0;
 			}
 		}
