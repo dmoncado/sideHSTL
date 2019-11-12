@@ -32,10 +32,10 @@
 	font-family: $font-stack-helvetica;
 	color: $dark-navy;
 	@include font-size(12px);
-	border-radius: 20px;
+	border-radius: 22px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	padding: 9px 30px;
+	padding: 10px 30px;
 
 	&:hover {
 		text-decoration: none;
