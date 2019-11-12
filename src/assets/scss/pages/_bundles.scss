@@ -1,0 +1,308 @@
+// -----------------------------------------------------------------------------
+// Bundles page
+// -----------------------------------------------------------------------------
+
+.bundles-hero {
+	background-image: url('../images/bundles-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 250px;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		height: 350px;
+	}
+
+	&::after {
+		content: " ";
+		z-index: 10;
+		display: block;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(27,20,100,1) 100%);
+	}
+
+	&__title {
+		background-color: rgba(15, 11, 56, 0.25);
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 100;
+
+		.container {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				right: 20px;
+				bottom: -58px;
+				height: 80px;
+				width: 80px;
+				border-radius: 50%;
+				border: 5px solid $dark-navy;
+				z-index: 200;
+				background-color: #fff;
+				background-image: url('../images/svg/portfolio-badge.svg');
+				background-size: 60%;
+				background-position: center 24px;
+				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(md) {
+					bottom: -67px;
+					right: 0;
+					height: 100px;
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+
+.bundles-intro {
+	background-color: $dark-navy;
+	color: $light-grey;
+
+
+	@include media-breakpoint-up(md) {
+		padding-top: 80px;
+	}
+
+	.container {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: -50px;
+			left: 50%;
+			z-index: 200;
+			width: 30px;
+			height: 30px;
+			margin-left: -15px;
+			background-image: url('../images/svg/arrow-down.svg');
+			background-size: 25px;
+			background-position: center 10px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__contents {
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+
+		&__body {
+			color: #fff;
+			margin-bottom: 50px;
+
+			h2 {
+				@include hr-rule($light-navy);
+			}
+
+			p {
+				color: $light-grey;
+				padding-right: 50px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+				margin-bottom: 0;
+			}
+		}
+
+		&__visual {
+
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+				padding-left: 50px;
+			}
+		}
+	}
+}
+
+.bundles-body {
+	background-color: $light-grey;
+
+	h2 {
+		color: $dark-navy;
+		margin-bottom: 50px;
+	}
+}
+
+.bundles-card {
+	@include service-card;
+	margin: 0 0 80px 0;
+
+	&__content {
+
+		&__header {
+
+			h3 {
+				color: $dark-navy;
+				@include hr-rule($light-grey);
+			}
+
+			p {
+
+			}
+		}
+
+		&__body {
+			padding-top: 30px;
+			margin-bottom: 30px;
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+			}
+
+			&__details {
+
+				@include media-breakpoint-up(lg) {
+					width: 50%;
+				}
+
+				h3 {
+					color: $dark-navy;
+				}
+
+				ul {
+					margin-bottom: 40px;
+
+					@include media-breakpoint-up(lg) {
+						margin: 0;
+					}
+
+					li {
+
+					}
+				}
+			}
+
+			&__visual {
+
+				@include media-breakpoint-up(lg) {
+					width: 50%;
+					display: flex;
+					justify-content: flex-end;
+				}
+
+				img {
+
+				}
+			}
+		}
+
+		&__footer {
+			display: flex;
+			border-top: 2px solid $light-grey;
+			padding-top: 30px;
+
+			&__actions {
+
+				@include media-breakpoint-up(lg) {
+					width: 50%;
+				}
+
+				a {
+					@include brand-btn;
+				}
+			}
+
+			&__details {
+				width: 50%;
+				display: flex;
+				justify-content: flex-end;
+
+
+				p {
+					@include price-badge;
+				}
+			}
+		}
+	}
+
+	&--business-starter-kit {
+
+		// Adds extra badge icon
+		&::before {
+			content: "";
+			position: absolute;
+			right: 60px;
+			top: -30px;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			border: 2px solid $dark-navy;
+			z-index: 200;
+			background-color: #fff;
+			background-image: url('../images/svg/portfolio-badge.svg');
+			background-size: 60%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&::after {
+			background-image: url('../images/svg/services-vector-artwork.svg');
+		}
+	}
+
+	&--business-starter-kit-lite {
+
+		.bundles-card__content {
+
+			&__header {
+
+				h3 {
+
+					span {
+						font-weight: 200;
+						display: inline-block;
+						text-transform: uppercase;
+						letter-spacing: 10px;
+						border-left: 1px solid $dark-navy;
+						margin-left: 20px;
+						padding-left: 22px;
+					}
+				}
+			}
+		}
+
+		// Adds extra badge icon
+		&::before {
+			content: "";
+			position: absolute;
+			right: 60px;
+			top: -30px;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			border: 2px solid $dark-navy;
+			z-index: 200;
+			background-color: #fff;
+			background-image: url('../images/svg/portfolio-badge.svg');
+			background-size: 60%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&::after {
+			background-image: url('../images/svg/services-logos.svg');
+		}
+	}
+
+	&--brand-me {
+
+		&::after {
+			background-image: url('../images/svg/services-vector-artwork.svg');
+		}
+	}
+}
