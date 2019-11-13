@@ -10,7 +10,11 @@
 
 /* Backgrounds */
 .embed #container {
-	background: blue !important; 
+	background-color: blue;
+}
+
+.redesigned-theme-2018 .wufoo .info {
+	background-color: red;
 }
 
 .wufoo input.text,
