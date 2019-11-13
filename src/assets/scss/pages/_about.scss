@@ -73,7 +73,7 @@
 
 		h2 {
 			color: $dark-navy;
-			@include hr-rule($light-grey);
+			@include hr-rule(#d9d9d9);
 		}
 
 		.row {
