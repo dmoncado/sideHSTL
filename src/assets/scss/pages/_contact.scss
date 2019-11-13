@@ -74,4 +74,45 @@
 		color: $dark-navy;
 		margin-bottom: 50px;
 	}
+
+	&__content {
+		border: 1px solid red;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+
+		&__form {
+			border: 1px solid blue;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			border-bottom: 2px solid #d9d9d9;
+
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+				padding-bottom: 0;
+				margin-bottom: 0;
+				border: none;
+			}
+
+			// Wufoo form
+			#wufoo-zslakml10lzo36 {
+				border: 4px solid red;
+
+				.wufoo-form-container {
+					background-color: #ddd;
+
+					
+				}
+			}
+		}
+
+		&__map {
+			border: 1px solid green;
+
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+			}
+		}
+	}
 }
