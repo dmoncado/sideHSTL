@@ -13,8 +13,10 @@
 	background-color: blue;
 }
 
-.redesigned-theme-2018 .wufoo .info {
+.redesigned-theme-2018 .wufoo .info,
+.wufoo .info, .wufoo .paging-context {
 	background-color: red;
+	border: 2px solid orange;
 }
 
 .wufoo input.text,
