@@ -8,7 +8,7 @@
 
 - - - - - - - - - - - - - - - - - - - - - */
 
-/* Backgrounds */
+/* Backgrounds - Derick */
 .embed #container {
 	background-color: blue;
 }
@@ -21,10 +21,11 @@
 
 .wufoo input.text,
 .wufoo textarea.textarea{
-	background:#FFFFFF
+	background:#FFFFFF;
 }
 
-.wufoo header {
+.wufoo header,
+.wufoo .info, .wufoo .paging-context {
 	display: none;
 }
 
