@@ -135,7 +135,7 @@
 					color: $darkest-grey;
 					font-family: 'PT Mono', monospace;
 					@include font-size(18px);
-					margin-bottom: 5px;
+					margin-bottom: 0;
 				}
 
 				.c-editor.c-columns-0 > div,
@@ -143,10 +143,27 @@
 					float: none;
 				}
 
+				.c-choice-checkboxes {
+
+					.c-label {
+						padding-bottom: 15px;
+					}
+
+					.c-editor {
+						margin-bottom: 20px;
+						padding: 0;
+					}
+				}
+
 				.c-choice-option {
-					padding: 8px 12px 0px 12px;
+					padding: 8px 12px 8px 12px;
 					border-radius: 8px;
 					margin-bottom: 2px;
+
+					> label {
+						margin-bottom: 0;
+						padding: 0px 0 0px 30px;
+					}
 
 					&.c-checked {
 						background: #e4e4e4;
@@ -176,46 +193,51 @@
 					}
 				}
 
-				.c-forms-confirmation-message {
-					padding: 25px 25px 25px 40px;
-					font-size: 18px;
-					background-color: rgba(57, 181, 74, 0.2);
-					border-radius: 8px;
-					color: $brand-dark-green;
-					font-weight: bold;
-					margin-bottom: 30px;
-
-					span {
-
-						p {
-							margin-bottom: 0;
-							position: relative;
-							padding-left: 30px;
-
-							&::before {
-								content: "\f00c";
-								font-family: FontAwesome;
-								height: 28px;
-								width: 28px;
-								border: 2px solid $brand-dark-green;
-								color: $brand-dark-green;
-								border-radius: 50%;
-								position: absolute;
-								left: -10px;
-								top: -2px;
-								font-style: normal;
-								font-weight: normal;
-								text-decoration: inherit;
-								font-size: 16px;
-								padding-top: 1px;
-								text-align: center;
-							}
-						}
-					}
+				textarea {
+					height: 230px;
+					margin-bottom: 10px;
 				}
 
 				.c-forms-confirmation {
 					overflow: visible;
+
+					.c-forms-confirmation-message {
+						padding: 25px 25px 25px 40px;
+						font-size: 18px;
+						background-color: rgba(57, 181, 74, 0.2);
+						border-radius: 8px;
+						color: $brand-dark-green;
+						font-weight: bold;
+						margin-bottom: 30px;
+
+						span {
+
+							p {
+								margin-bottom: 0;
+								position: relative;
+								padding-left: 30px;
+
+								&::before {
+									content: "\f00c";
+									font-family: FontAwesome;
+									height: 28px;
+									width: 28px;
+									border: 2px solid $brand-dark-green;
+									color: $brand-dark-green;
+									border-radius: 50%;
+									position: absolute;
+									left: -10px;
+									top: -2px;
+									font-style: normal;
+									font-weight: normal;
+									text-decoration: inherit;
+									font-size: 16px;
+									padding-top: 1px;
+									text-align: center;
+								}
+							}
+						}
+					}
 				}
 
 				.c-forms-form-details {
@@ -243,15 +265,39 @@
 						@include font-size(16);
 						padding-left: 10px;
 					}
+					//
+					// .c-choice-option {
+					// 	padding: 0 0 0 10px;
+					//
+					// 	label {
+					// 		font-family: Arial,Helvetica,sans-serif;
+					// 		font-weight: 400;
+					// 		color: $dark-grey;
+					// 		@include font-size(16);
+					// 		padding-left: 10px;
+					// 	}
+					// }
 
-					.c-choice-option {
-						padding: 0 0 0 10px;
+					.c-choice-checkboxes {
 
-						label {
-							font-family: Arial,Helvetica,sans-serif;
-							font-weight: 400;
-							color: $dark-grey;
-							@include font-size(16);
+						.c-editor {
+							margin-bottom: 0;
+						}
+
+						.c-choice-option {
+							padding: 0 0 0 10px;
+
+							label {
+								font-family: Arial,Helvetica,sans-serif;
+								font-weight: 400;
+								color: $dark-grey;
+								@include font-size(16);
+								padding-left: 10px;
+							}
+						}
+
+						.c-label {
+							padding: 0 8px 2px 8px;
 						}
 					}
 				}
