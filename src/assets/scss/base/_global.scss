@@ -14,7 +14,11 @@ html {
 body {
 
 	main {
-		margin-top: 64px;
+		margin-top: 102px;
+
+		@include media-breakpoint-up(lg) {
+			margin-top: 88px;
+		}
 	}
 }
 

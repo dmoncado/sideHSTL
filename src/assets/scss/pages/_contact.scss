@@ -51,7 +51,7 @@
 				background-color: #fff;
 				background-image: url('../images/svg/contact-badge.svg');
 				background-size: 65%;
-				background-position: center 32px;
+				background-position: center;
 				background-repeat: no-repeat;
 
 				@include media-breakpoint-up(md) {
@@ -82,7 +82,6 @@
 		}
 
 		&__form {
-			border: 1px solid blue;
 			padding-bottom: 30px;
 			margin-bottom: 30px;
 			border-bottom: 2px solid #d9d9d9;
@@ -173,10 +172,11 @@
 				.c-forms-form .c-button-section button:not(.c-icon-button) {
 					background: none;
 					display: inline-block;
-					@include brand-btn;
+					@include brand-btn($dark-navy, #fff);
 				}
 
 				input[type="text"],
+				input[type="email"],
 				textarea {
 					background: #fff;
 					border-radius: 8px;

@@ -220,7 +220,7 @@
 				justify-content: space-between;
 
 				a {
-					@include brand-btn;
+					@include brand-btn($dark-navy, #fff);
 				}
 
 				p {
