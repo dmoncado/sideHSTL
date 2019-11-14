@@ -76,7 +76,6 @@
 	}
 
 	&__content {
-		border: 1px solid red;
 
 		@include media-breakpoint-up(lg) {
 			display: flex;
@@ -91,29 +90,179 @@
 			@include media-breakpoint-up(lg) {
 				width: 50%;
 				padding-bottom: 0;
+				padding-right: 40px;
 				margin-bottom: 0;
 				border: none;
 			}
 
-			// Wufoo form
-			#wufoo-zslakml10lzo36 {
-				border: 4px solid red;
+			// Cognito Form
+			.cognito {
+				background-color: #f2f2f2;
+				position: relative;
 
-				.wufoo-form-container {
-					background-color: #ddd;
+				&::after {
+					content: "";
+					position: absolute;
+					height: 29px;
+					width: 100%;
+					bottom: 0;
+					background-color: $light-grey;
+				}
 
-					#form1 {
-						background-color: red;
+				.c-forms-heading {
+
+					.c-forms-form-title {
+						display: none;
+					}
+				}
+
+				.c-forms-form-body, .c-forms-form {
+					background-color: #f2f2f2;
+				}
+
+				.c-span-24 {
+
+					.c-span-12 {
+						width: 100%;
+					}
+				}
+
+				label {
+					display: inline-block;
+				}
+
+				.c-forms-form :not(.c-question) > .c-label {
+					color: $darkest-grey;
+					font-family: 'PT Mono', monospace;
+					@include font-size(18px);
+					margin-bottom: 5px;
+				}
+
+				.c-editor.c-columns-0 > div,
+				.cognito .c-editor .c-columns-0 > div {
+					float: none;
+				}
+
+				.c-choice-option {
+					padding: 8px 12px 0px 12px;
+					border-radius: 8px;
+					margin-bottom: 2px;
+
+					&.c-checked {
+						background: #e4e4e4;
+					}
+				}
+
+				.c-forms-form .c-button-section button:not(.c-icon-button) {
+					background: none;
+					display: inline-block;
+					@include brand-btn;
+				}
+
+				input[type="text"],
+				textarea {
+					background: #fff;
+					border-radius: 8px;
+					border: none;
+					outline: none;
+					padding: 10px 12px;
+					@include font-size(18px);
+					border: 2px solid #fff;
+					margin-bottom: 25px;
+
+					&:focus {
+						border: 2px solid $dark-navy;
+						outline: none;
+					}
+				}
+
+				.c-forms-confirmation-message {
+					padding: 25px 25px 25px 40px;
+					font-size: 18px;
+					background-color: rgba(57, 181, 74, 0.2);
+					border-radius: 8px;
+					color: $brand-dark-green;
+					font-weight: bold;
+					margin-bottom: 30px;
+
+					span {
+
+						p {
+							margin-bottom: 0;
+							position: relative;
+							padding-left: 30px;
+
+							&::before {
+								content: "\f00c";
+								font-family: FontAwesome;
+								height: 28px;
+								width: 28px;
+								border: 2px solid $brand-dark-green;
+								color: $brand-dark-green;
+								border-radius: 50%;
+								position: absolute;
+								left: -10px;
+								top: -2px;
+								font-style: normal;
+								font-weight: normal;
+								text-decoration: inherit;
+								font-size: 16px;
+								padding-top: 1px;
+								text-align: center;
+							}
+						}
+					}
+				}
+
+				.c-forms-confirmation {
+					overflow: visible;
+				}
+
+				.c-forms-form-details {
+					background-color: #fff;
+					padding: 20px 30px;
+					margin-top: 60px;
+					border-radius: 8px;
+					box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+					position: relative;
+					z-index: 1;
+
+					&::before {
+						content: "Your Message:";
+						position: absolute;
+						top: -30px;
+						left: 0;
+					}
+
+					.c-field {
+						margin: 5px 0;
+					}
+
+					.c-content {
+						color: $dark-grey;
+						@include font-size(16);
+						padding-left: 10px;
+					}
+
+					.c-choice-option {
+						padding: 0 0 0 10px;
+
+						label {
+							font-family: Arial,Helvetica,sans-serif;
+							font-weight: 400;
+							color: $dark-grey;
+							@include font-size(16);
+						}
 					}
 				}
 			}
 		}
 
 		&__map {
-			border: 1px solid green;
 
 			@include media-breakpoint-up(lg) {
 				width: 50%;
+				padding-left: 40px;
 			}
 		}
 	}

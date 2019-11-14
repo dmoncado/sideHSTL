@@ -31,7 +31,7 @@ h3 {
 	@include font-size(28px);
 }
 
-body {
+body, label {
 	color: $darkest-grey;
 	font-family: 'PT Mono', monospace;
 	@include font-size(18px);
