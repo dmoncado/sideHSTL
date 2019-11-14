@@ -26,11 +26,11 @@
 }
 
 // Main button
-@mixin brand-btn {
+@mixin brand-btn($color, $hover) {
 	display: inline-block;
-	border: 2px solid $dark-navy;
+	border: 2px solid $color;
 	font-family: $font-stack-helvetica;
-	color: $dark-navy;
+	color: $color;
 	@include font-size(12px);
 	border-radius: 22px;
 	text-transform: uppercase;
@@ -39,8 +39,8 @@
 
 	&:hover {
 		text-decoration: none;
-		background-color: $dark-navy;
-		color: #fff;
+		background-color: $color;
+		color: $hover;
 	}
 }
 

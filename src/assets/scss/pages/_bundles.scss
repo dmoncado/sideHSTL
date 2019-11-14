@@ -51,7 +51,7 @@
 				background-color: #fff;
 				background-image: url('../images/svg/portfolio-badge.svg');
 				background-size: 60%;
-				background-position: center 24px;
+				background-position: center;
 				background-repeat: no-repeat;
 
 				@include media-breakpoint-up(md) {
@@ -213,7 +213,7 @@
 				}
 
 				a {
-					@include brand-btn;
+					@include brand-btn($dark-navy, #fff);
 				}
 			}
 
