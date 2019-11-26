@@ -274,7 +274,7 @@
 						padding-left: 10px;
 					}
 
-					// Since checkboxes are handled differently on the confirm page
+					// Since checkboxes are handled differently on the recap page
 					.c-choice-checkboxes {
 
 						.c-editor {
@@ -303,10 +303,10 @@
 				}
 
 				// Form error validation
-				.cognito .c-forms-form .c-validation,
-				.cognito .c-forms-form .c-error:after,
-				.cognito .c-forms-form .c-table .c-error .toggle-on:after,
-				.cognito .c-forms-form .c-validation-icon {
+				.c-forms-form .c-validation,
+				.c-forms-form .c-error:after,
+				.c-forms-form .c-table .c-error .toggle-on:after,
+				.c-forms-form .c-validation-icon {
 					border-radius: 8px;
 					padding: 10px;
 					margin-top: -15px;
