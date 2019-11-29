@@ -5,6 +5,10 @@
 .recent-projects {
 	background-color: #e6e6e6;
 
+	&--about {
+		background-color: $light-grey;
+	}
+
 	.container {
 
 		h2 {
