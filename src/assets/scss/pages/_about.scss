@@ -122,6 +122,11 @@
 			margin: 0 auto;
 			text-align: center;
 
+			p {
+				width: 85%;
+				margin: 0 auto 25px auto;
+			}
+
 			a {
 				@include brand-btn($dark-navy, #fff);
 				margin-top: 15px;
