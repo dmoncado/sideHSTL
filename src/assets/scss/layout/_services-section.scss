@@ -4,10 +4,8 @@
 
 .services-section {
 	padding-bottom: 80px;
-
-	&--about {
-		background-color: #e6e6e6;
-	}
+	padding: 100px 0 80px 0;
+	background-color: #e6e6e6;
 
 	.container {
 
@@ -117,10 +115,5 @@
 				}
 			}
 		}
-	}
-
-	&--home {
-		background-color: $dark-navy;
-		padding: 100px 0 80px 0;
 	}
 }

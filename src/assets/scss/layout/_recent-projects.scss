@@ -5,7 +5,8 @@
 .recent-projects {
 	background-color: #e6e6e6;
 
-	&--about {
+	&--about,
+	&--home {
 		background-color: $light-grey;
 	}
 
