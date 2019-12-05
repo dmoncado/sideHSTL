@@ -36,6 +36,7 @@ a {
 
 	&:hover {
 		color: lighten($dark-navy, 15%);
+		cursor: pointer;
 	}
 }
 
