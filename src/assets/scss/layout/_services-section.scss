@@ -56,6 +56,7 @@
 					}
 
 					&--visual-design {
+						opacity: 0;
 
 						.services-card__content  {
 
@@ -72,9 +73,15 @@
 						&::after {
 							background-image: url('../images/svg/visual-design-badge.svg');
 						}
+
+						&[data-emergence="visible"] {
+							-webkit-animation-name: fadeInUp;
+							animation-name: fadeInUp;
+						}
 					}
 
 					&--web-development {
+						opacity: 0;
 
 						.services-card__content  {
 
@@ -92,9 +99,14 @@
 							background-image: url('../images/svg/web-development-badge.svg');
 						}
 
+						&[data-emergence="visible"] {
+							-webkit-animation-name: fadeInUp;
+							animation-name: fadeInUp;
+						}
 					}
 
 					&--photo-and-video {
+						opacity: 0;
 
 						.services-card__content  {
 
@@ -110,6 +122,11 @@
 
 						&::after {
 							background-image: url('../images/svg/photo-and-video-badge.svg');
+						}
+
+						&[data-emergence="visible"] {
+							-webkit-animation-name: fadeInUp;
+							animation-name: fadeInUp;
 						}
 					}
 				}

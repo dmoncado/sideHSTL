@@ -125,7 +125,7 @@
 		
 				<div class="card-deck">
 					<div class="card">
-						<div class="services-card services-card--visual-design animated infinite shake delay-2s slower" data-emergence="hidden">
+						<div class="services-card services-card--visual-design animated fast" data-emergence="hidden">
 							<div class="services-card__content">
 								<div class="services-card__content__heading">
 									<h3>Visual<br />Design</h3>
@@ -148,7 +148,7 @@
 					</div>
 		
 					<div class="card">
-						<div class="services-card services-card--web-development">
+						<div class="services-card services-card--web-development animated fast delay-05s" data-emergence="hidden">
 							<div class="services-card__content">
 								<div class="services-card__content__heading">
 									<h3>Web<br />Development</h3>
@@ -171,7 +171,7 @@
 					</div>
 		
 					<div class="card">
-						<div class="services-card services-card--photo-and-video">
+						<div class="services-card services-card--photo-and-video animated fast delay-1s" data-emergence="hidden">
 							<div class="services-card__content">
 								<div class="services-card__content__heading">
 									<h3>Video &<br />Photography</h3>
@@ -326,7 +326,8 @@
 	<!--- Init Emergence --->
 	<script>
 		emergence.init({
-			elemCushion: 0.15 // how much of element needs to be visible (%) for emergence to kick in
+			elemCushion: 0.15, // how much of element needs to be visible (%) for emergence to kick in
+			reset: false // keeps element in it's revealed state even after leaving the viewport 
 		});
 	</script>
 </body>
