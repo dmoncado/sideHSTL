@@ -68,9 +68,24 @@
 .portfolio-body {
 	background-color: $light-grey;
 
-	h2 {
-		color: $dark-navy;
-		margin-bottom: 50px;
+	.container {
+
+		h2 {
+			color: $dark-navy;
+			margin-bottom: 50px;
+		}
+
+		.card-deck {
+
+			.card {
+				opacity: 0;
+
+				&[data-emergence="visible"] {
+					-webkit-animation-name: fadeInUp;
+					animation-name: fadeInUp;
+				}
+			}
+		}
 	}
 }
 
