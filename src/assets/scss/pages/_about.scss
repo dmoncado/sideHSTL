@@ -111,6 +111,12 @@
 		&__visual {
 			margin-bottom: 40px;
 			@include make-col-ready();
+			opacity: 0;
+
+			&[data-emergence="visible"] {
+				-webkit-animation-name: fadeInUp;
+				animation-name: fadeInUp;
+			}
 
 			@include media-breakpoint-up(lg) {
 				@include make-col(6);
@@ -121,6 +127,12 @@
 		&__closer {
 			margin: 0 auto;
 			text-align: center;
+			opacity: 0;
+
+			&[data-emergence="visible"] {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
 
 			p {
 				width: 85%;
@@ -130,6 +142,12 @@
 			a {
 				@include brand-btn($dark-navy, #fff);
 				margin-top: 15px;
+				opacity: 0;
+
+				&[data-emergence="visible"] {
+					-webkit-animation-name: bounceIn;
+					animation-name: bounceIn;
+				}
 			}
 		}
 	}
@@ -142,6 +160,12 @@
 		}
 
 		.about-page-carousel {
+			opacity: 0;
+
+			&[data-emergence="visible"] {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
 
 			> div {
 
