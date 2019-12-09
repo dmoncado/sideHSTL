@@ -29,7 +29,11 @@ h1 {
 }
 
 h2 {
-	@include font-size(38px);
+	@include font-size(28px);
+
+	@include media-breakpoint-up(md) {
+		@include font-size(38px);
+	}
 }
 
 h3 {

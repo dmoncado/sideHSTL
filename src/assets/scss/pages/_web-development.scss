@@ -146,6 +146,7 @@
 		}
 
 		.card {
+			opacity: 0;
 			border: 0;
 			background: none;
 			margin: 0 0 60px 0;
@@ -157,6 +158,11 @@
 
 			@include media-breakpoint-up(xl) {
 				width: 33.33%;
+			}
+
+			&[data-emergence="visible"] {
+				-webkit-animation-name: fadeInUp;
+				animation-name: fadeInUp;
 			}
 		}
 	}

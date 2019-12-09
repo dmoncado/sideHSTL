@@ -3578,8 +3578,23 @@
 }
 
 .animated.delay-05s {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+
+	@include media-breakpoint-up(md) {  // Only on larger BPs so there's less of a delay on mobile
+		-webkit-animation-delay: 0.5s;
+		animation-delay: 0.5s;
+	}
+}
+
+.animated.delay-075s {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+
+  @include media-breakpoint-up(md) {  // Only on larger BPs so there's less of a delay on mobile
+	  -webkit-animation-delay: 0.75s;
+	  animation-delay: 0.75s;
+  }
 }
 
 .animated.delay-1s {
@@ -3588,8 +3603,8 @@
 }
 
 .animated.delay-1-5s {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .animated.delay-2s {
