@@ -91,7 +91,7 @@
 		<!--- About Page --->
 		<section class="about-hero">
 			<div class="about-hero__title">
-				<div class="container">
+				<div class="container animated bounceInRight delay-05s">
 					<h1>About</h1>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 		
 		<section class="about-body">
 			<div class="container">
-				<div class="about-body__intro">
+				<div class="about-body__intro animated fadeIn delay-1s">
 					<div class="row">
 						<div class="about-body__intro__details">
 							<h2>The Story</h2>
@@ -108,12 +108,12 @@
 							<p>After college, I initially focused primarily just in design, but after seeing 2010's <em>The Social Network</em> in theaters with some friends, I got inspired to persue web development and taught myself how to code.</p>
 							<p>I've been designing and building ever since.</p>
 						</div>
-						<div class="about-body__intro__visual">
+						<div class="about-body__intro__visual animated delay-075s" data-emergence="hidden">
 							<img src="//via.placeholder.com/550x600">
 						</div>
 					</div>
 					<div class="row">
-						<div class="about-body__intro__visual">
+						<div class="about-body__intro__visual animated delay-075s" data-emergence="hidden">
 							<img src="//via.placeholder.com/550x400">
 						</div>
 						<div class="about-body__intro__details">
@@ -124,10 +124,10 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="about-body__intro__closer">
+						<div class="about-body__intro__closer animated delay-025s" data-emergence="hidden">
 							<p>I have worked with clients spanning all accross the US and even with some of the big boys over in the Bay Area. I'm truly greatful for some of the opportunities that have come my way and the opportunites that have yet to introduce themselves.</p>
 							<p>So.. Want to work together?</p>
-							<a href="/contact.html" title="Let's chat">Let's Chat</a>
+							<a href="/contact.html" title="Let's chat" class="animated delay-05s" data-emergence="hidden">Let's Chat</a>
 						</div>
 					</div>
 				</div>
@@ -136,7 +136,7 @@
 		
 				<div class="about-body__logo-strip">
 					<h2>Companies I've worked with</h2>
-					<div class="about-page-carousel">
+					<div class="about-page-carousel animated delay-05s" data-emergence="hidden"">
 						<div>
 							<img width="150" src="../assets/images/slick-logos/canp-logo.png">
 						</div>
@@ -347,7 +347,7 @@
 	<!--- Init Emergence --->
 	<script>
 		emergence.init({
-			elemCushion: 0.15, // how much of element needs to be visible (%) for emergence to kick in
+			elemCushion: 0.10, // how much of element needs to be visible (%) for emergence to kick in
 			reset: false // keeps element in it's revealed state even after leaving the viewport
 		});
 	</script>
