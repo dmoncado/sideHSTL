@@ -10,6 +10,7 @@
 	.container {
 
 		h2 {
+			display: none;
 			color: $dark-navy;
 			margin-bottom: 50px;
 		}
@@ -130,6 +131,22 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.services-about { // Wrapper so you can have the H2 here
+
+	.services-section {
+		padding: 60px 0 80px 0;
+
+		.container {
+
+			h2 {
+				display: inline-block;
+				color: $dark-navy;
+				margin-bottom: 60px;
 			}
 		}
 	}
