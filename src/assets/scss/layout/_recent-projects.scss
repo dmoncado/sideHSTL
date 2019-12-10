@@ -18,14 +18,15 @@
 		}
 
 		.card-deck {
-			opacity: 0; 
-
-			&[data-emergence="visible"] {
-				-webkit-animation-name: fadeIn;
-				animation-name: fadeIn;
-			}
 
 			.card {
+				opacity: 0;
+
+				&[data-emergence="visible"] {
+					-webkit-animation-name: fadeInUp;
+					animation-name: fadeInUp;
+				}
+
 				@include media-breakpoint-up(md) {
 					width: 50%;
 				}
