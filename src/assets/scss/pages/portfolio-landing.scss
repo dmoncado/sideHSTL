@@ -18,6 +18,10 @@
 		background-image: url('../images/admin-ui-hero.jpg');
 	}
 
+	&--illustrations {
+		background-image: url('../images/illustrations-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
@@ -144,6 +148,7 @@
 		}
 
 		.sample-4up {
+			margin-bottom: 40px;
 
 			@include media-breakpoint-up(lg) {
 				display: flex;
@@ -152,11 +157,16 @@
 			}
 
 			> div {
-				margin-bottom: 40px;
+				margin-bottom: 50px;
 				@include make-col-ready();
 
 				@include media-breakpoint-up(lg) {
 					@include make-col(6);
+				}
+
+				p {
+					text-align: left;
+					width: 80%;
 				}
 			}
 		}
