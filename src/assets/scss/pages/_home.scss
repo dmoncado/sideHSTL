@@ -26,10 +26,6 @@
 		background-position-x: initial;
 	}
 
-	// @include media-breakpoint-up(xl) {
-	// 	padding: 80px 0;
-	// }
-
 	&::after {
 		content: " ";
 		z-index: 10;
@@ -67,7 +63,7 @@
 			}
 
 			@include media-breakpoint-up(lg) {
-				padding: 50px;
+				padding: 40px;
 			}
 
 			.intro {

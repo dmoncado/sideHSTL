@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 .landing-page-hero {
-	background-image: url('../images/landing-page-hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,6 +12,10 @@
 
 	@include media-breakpoint-up(md) {
 		height: 300px;
+	}
+
+	&--admin-ui-design {
+		background-image: url('../images/admin-ui-hero.jpg');
 	}
 
 	&::after {
@@ -104,40 +107,57 @@
 .landing-page-body {
 	background-color: $light-grey;
 
-	.landing-page-carousel {
-		margin-bottom: 80px;
+	.container {
 
-		> div {
-			border: 2px solid $dark-navy;
-			box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
-			border-radius: 8px;
-			overflow: hidden;
-		}
-	}
-
-	p {
-		margin: 0 auto 30px auto;
-		text-align: center;
-
-		@include media-breakpoint-up(md) {
-			width: 65%;
-		}
-	}
-
-	.sample-4up {
-
-		@include media-breakpoint-up(lg) {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
+		h2 {
+			color: $dark-navy;
+			margin-bottom: 50px;
 		}
 
-		> div {
-			margin-bottom: 40px;
-			@include make-col-ready();
+		h3 {
+			color: $dark-navy;
+			margin-bottom: 50px;
+		}
+
+		img {
+			border: 2px solid #e3e3e3;
+		}
+
+		.landing-page-carousel {
+			margin: 0 auto 80px auto;
+
+			> div {
+
+				img {
+					box-shadow: none;
+				}
+			}
+		}
+
+		p {
+			margin: 0 auto 30px auto;
+			text-align: center;
+
+			@include media-breakpoint-up(md) {
+				width: 65%;
+			}
+		}
+
+		.sample-4up {
 
 			@include media-breakpoint-up(lg) {
-				@include make-col(6);
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+
+			> div {
+				margin-bottom: 40px;
+				@include make-col-ready();
+
+				@include media-breakpoint-up(lg) {
+					@include make-col(6);
+				}
 			}
 		}
 	}
