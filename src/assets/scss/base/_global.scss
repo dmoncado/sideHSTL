@@ -32,10 +32,11 @@ hr {
 }
 
 a {
+	font-weight: bold;
 	color: $dark-navy;
 
 	&:hover {
-		color: lighten($dark-navy, 15%);
+		color: $light-navy;
 		cursor: pointer;
 	}
 }

@@ -147,8 +147,12 @@
 			}
 		}
 
+		.row {
+			margin-bottom: 50px;
+		}
+
 		.sample-4up {
-			margin-bottom: 40px;
+			margin-bottom: 50px;
 
 			@include media-breakpoint-up(lg) {
 				display: flex;
@@ -167,6 +171,24 @@
 				p {
 					text-align: left;
 					width: 80%;
+				}
+
+				&.stacked  {
+
+					img:first-child {
+						margin-bottom: 40px;
+					}
+
+					@include media-breakpoint-up(lg) {
+
+						img:first-child {
+							margin-bottom: 0;
+						}
+
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+					}
 				}
 			}
 		}
