@@ -240,10 +240,6 @@
 				a {
 					@include brand-btn($dark-navy, #fff);
 				}
-
-				p {
-					@include price-badge;
-				}
 			}
 		}
 	}

@@ -44,18 +44,6 @@
 	}
 }
 
-// Price badge
-@mixin price-badge {
-	display: inline-block;
-	background-color: $light-grey;
-	font-family: $font-stack-helvetica;
-	font-weight: bold;
-	border-radius: 8px;
-	padding: 8px 18px;
-	color: $price-green;
-	margin-bottom: 0;
-}
-
 // Services card
 @mixin service-card {
 	background-color: #fff;
