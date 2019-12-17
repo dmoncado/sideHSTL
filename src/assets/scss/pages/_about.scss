@@ -46,7 +46,7 @@
 				height: 80px;
 				width: 80px;
 				border-radius: 50%;
-				border: 5px solid $dark-navy;
+				box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.5);
 				z-index: 200;
 				background-color: #fff;
 				background-image: url('../images/svg/services-headshots.svg');
@@ -55,10 +55,9 @@
 				background-repeat: no-repeat;
 
 				@include media-breakpoint-up(md) {
-					bottom: -67px;
-					right: 0;
-					height: 100px;
-					width: 100px;
+					bottom: -64px;
+					height: 90px;
+					width: 90px;
 				}
 			}
 		}
