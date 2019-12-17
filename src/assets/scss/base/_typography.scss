@@ -49,3 +49,8 @@ body, label {
 	font-family: 'PT Mono', monospace;
 	@include font-size(18px);
 }
+
+p,
+ul li a {
+	opacity: 0.6;
+}
