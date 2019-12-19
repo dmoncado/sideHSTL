@@ -147,7 +147,7 @@
 					animation-name: fadeInUp;
 				}
 
-				@include media-breakpoint-up(md) {
+				@include media-breakpoint-up(lg) {
 					width: 50%;
 				}
 
@@ -161,6 +161,7 @@
 						height: 100%;
 
 						&__header {
+							margin-bottom: 5px;
 
 							h3 {
 								color: $dark-navy;
@@ -169,7 +170,6 @@
 						}
 
 						&__body {
-							padding-top: 30px;
 
 							&__details {
 
@@ -230,8 +230,13 @@
 										text-transform: uppercase;
 										letter-spacing: 10px;
 										border-left: 1px solid $dark-navy;
-										margin-left: 20px;
-										padding-left: 22px;
+										margin-left: 6px;
+										padding-left: 12px;
+
+										@include media-breakpoint-up(lg) {
+											margin-left: 20px;
+											padding-left: 22px;
+										}
 									}
 								}
 							}
