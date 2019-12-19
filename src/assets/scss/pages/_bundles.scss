@@ -130,178 +130,144 @@
 .bundles-body {
 	background-color: $light-grey;
 
-	h2 {
-		color: $dark-navy;
-		margin-bottom: 50px;
-	}
-}
+	.container {
 
-.bundles-card {
-	@include service-card;
-	margin: 0 0 80px 0;
-
-	&__content {
-
-		&__header {
-
-			h3 {
-				color: $dark-navy;
-				@include hr-rule($light-grey);
-			}
-
-			p {
-
-			}
+		h2 {
+			color: $dark-navy;
+			margin-bottom: 50px;
 		}
 
-		&__body {
-			padding-top: 30px;
-			margin-bottom: 30px;
+		.card-deck {
 
-			@include media-breakpoint-up(lg) {
-				display: flex;
-			}
+			.card {
+				opacity: 0;
 
-			&__details {
+				&[data-emergence="visible"] {
+					-webkit-animation-name: fadeInUp;
+					animation-name: fadeInUp;
+				}
 
-				@include media-breakpoint-up(lg) {
+				@include media-breakpoint-up(md) {
 					width: 50%;
 				}
 
-				h4 {
-					color: $dark-navy;
+				.bundles-card {
+					@include service-card;
+					margin-bottom: 15px;
 
-				}
+					&__content {
+						display: flex;
+						flex-direction: column;
+						height: 100%;
 
-				ul {
-					margin-bottom: 40px;
+						&__header {
 
-					@include media-breakpoint-up(lg) {
-						margin: 0;
+							h3 {
+								color: $dark-navy;
+								@include hr-rule($light-grey);
+							}
+						}
+
+						&__body {
+							padding-top: 30px;
+
+							&__details {
+
+								h4 {
+									color: $dark-navy;
+								}
+
+								ul {
+									margin-bottom: 30px;
+								}
+							}
+						}
+
+						&__footer {
+
+							a {
+								@include brand-btn($dark-navy, #fff);
+							}
+						}
 					}
 
-					li {
+					&--business-starter-kit {
 
+						// Adds extra badge icon
+						&::before {
+							content: "";
+							position: absolute;
+							right: 60px;
+							top: -30px;
+							height: 60px;
+							width: 60px;
+							border-radius: 50%;
+							box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.5);
+							z-index: 200;
+							background-color: #fff;
+							background-image: url('../images/svg/portfolio-badge.svg');
+							background-size: 60%;
+							background-position: center;
+							background-repeat: no-repeat;
+						}
+
+						&::after {
+							background-image: url('../images/svg/services-vector-artwork.svg');
+						}
+					}
+
+					&--business-starter-kit-lite {
+
+						.bundles-card__content {
+
+							&__header {
+
+								h3 {
+
+									span {
+										font-weight: 200;
+										display: inline-block;
+										text-transform: uppercase;
+										letter-spacing: 10px;
+										border-left: 1px solid $dark-navy;
+										margin-left: 20px;
+										padding-left: 22px;
+									}
+								}
+							}
+						}
+
+						// Adds extra badge icon
+						&::before {
+							content: "";
+							position: absolute;
+							right: 60px;
+							top: -30px;
+							height: 60px;
+							width: 60px;
+							border-radius: 50%;
+							box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.5);
+							z-index: 200;
+							background-color: #fff;
+							background-image: url('../images/svg/portfolio-badge.svg');
+							background-size: 60%;
+							background-position: center;
+							background-repeat: no-repeat;
+						}
+
+						&::after {
+							background-image: url('../images/svg/services-logos.svg');
+						}
+					}
+
+					&--brand-me {
+
+						&::after {
+							background-image: url('../images/svg/services-vector-artwork.svg');
+						}
 					}
 				}
 			}
-
-			&__visual {
-
-				@include media-breakpoint-up(lg) {
-					width: 50%;
-					display: flex;
-					justify-content: flex-end;
-				}
-
-				img {
-
-				}
-			}
-		}
-
-		&__footer {
-			display: flex;
-			border-top: 2px solid $light-grey;
-			padding-top: 30px;
-
-			&__actions {
-
-				@include media-breakpoint-up(lg) {
-					width: 50%;
-				}
-
-				a {
-					@include brand-btn($dark-navy, #fff);
-				}
-			}
-
-			&__details {
-				width: 50%;
-				display: flex;
-				justify-content: flex-end;
-
-
-				p {
-					@include price-badge;
-				}
-			}
-		}
-	}
-
-	&--business-starter-kit {
-
-		// Adds extra badge icon
-		&::before {
-			content: "";
-			position: absolute;
-			right: 60px;
-			top: -30px;
-			height: 60px;
-			width: 60px;
-			border-radius: 50%;
-			box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.5);
-			z-index: 200;
-			background-color: #fff;
-			background-image: url('../images/svg/portfolio-badge.svg');
-			background-size: 60%;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-
-		&::after {
-			background-image: url('../images/svg/services-vector-artwork.svg');
-		}
-	}
-
-	&--business-starter-kit-lite {
-
-		.bundles-card__content {
-
-			&__header {
-
-				h3 {
-
-					span {
-						font-weight: 200;
-						display: inline-block;
-						text-transform: uppercase;
-						letter-spacing: 10px;
-						border-left: 1px solid $dark-navy;
-						margin-left: 20px;
-						padding-left: 22px;
-					}
-				}
-			}
-		}
-
-		// Adds extra badge icon
-		&::before {
-			content: "";
-			position: absolute;
-			right: 60px;
-			top: -30px;
-			height: 60px;
-			width: 60px;
-			border-radius: 50%;
-			box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.5);
-			z-index: 200;
-			background-color: #fff;
-			background-image: url('../images/svg/portfolio-badge.svg');
-			background-size: 60%;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-
-		&::after {
-			background-image: url('../images/svg/services-logos.svg');
-		}
-	}
-
-	&--brand-me {
-
-		&::after {
-			background-image: url('../images/svg/services-vector-artwork.svg');
 		}
 	}
 }
