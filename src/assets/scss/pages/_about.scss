@@ -121,6 +121,10 @@
 				@include make-col(6);
 				margin-bottom: 0;
 			}
+
+			img {
+				box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
+			}
 		}
 
 		&__closer {
