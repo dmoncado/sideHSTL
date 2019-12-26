@@ -30,6 +30,10 @@
 		background-image: url('../images/packaging-design-hero.jpg');
 	}
 
+	&--website-banner-ads {
+		background-image: url('../images/banners-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
