@@ -139,6 +139,23 @@
 			border: 2px solid #e3e3e3;
 		}
 
+		a {
+			position: relative;
+			margin-left: 30px;
+
+			&::before {
+				content: "";
+				height: 20px;
+				width: 20px;
+				position: absolute;
+				left: -30px;
+				top: 0;
+				background-image: url('../images/svg/arrow-left-white.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+
 		.landing-page-carousel {
 			margin: 0 auto 80px auto;
 
