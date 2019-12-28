@@ -34,6 +34,10 @@
 		background-image: url('../images/banners-hero.jpg');
 	}
 
+	&--ios-app-design {
+		background-image: url('../images/ios-app-design-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
