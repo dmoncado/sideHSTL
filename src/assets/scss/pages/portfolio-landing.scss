@@ -38,6 +38,10 @@
 		background-image: url('../images/ios-app-design-hero.jpg');
 	}
 
+	&--muracon-website {
+		background-image: url('../images/muracon-website-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
@@ -106,6 +110,10 @@
 			p {
 				color: $light-grey;
 				padding-right: 50px;
+			}
+
+			a {
+				color: $brand-orange;
 			}
 
 			@include media-breakpoint-up(lg) {
