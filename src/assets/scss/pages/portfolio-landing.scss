@@ -46,6 +46,10 @@
 		background-image: url('../images/canp-website-hero.jpg');
 	}
 
+	&--xactly-website {
+		background-image: url('../images/xactly-website-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
