@@ -42,6 +42,10 @@
 		background-image: url('../images/muracon-website-hero.jpg');
 	}
 
+	&--canp-website {
+		background-image: url('../images/canp-website-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
