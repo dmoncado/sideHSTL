@@ -155,6 +155,33 @@
 		}
 	}
 
+	&__qualifications {
+
+		h2 {
+			color: $dark-navy;
+			margin-bottom: 50px;
+		}
+
+		&__body {
+			opacity: 0;
+
+			&[data-emergence="visible"] {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			ul {
+				margin-bottom: 0;
+				opacity: 0.6;
+			}
+		}
+	}
+
 	&__logo-strip {
 
 		h2 {
