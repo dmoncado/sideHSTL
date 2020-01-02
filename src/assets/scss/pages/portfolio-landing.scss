@@ -50,6 +50,10 @@
 		background-image: url('../images/xactly-website-hero.jpg');
 	}
 
+	&--vpc-website {
+		background-image: url('../images/vpc-website-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
