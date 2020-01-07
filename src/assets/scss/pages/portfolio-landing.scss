@@ -54,6 +54,10 @@
 		background-image: url('../images/vpc-website-hero.jpg');
 	}
 
+	&--headshots {
+		background-image: url('../images/headshots-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
