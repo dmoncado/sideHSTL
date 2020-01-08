@@ -51,6 +51,26 @@
 							}
 						}
 
+						&.divider {
+							border-right: 2px solid #fff;
+							opacity: 0.2;
+							margin: 0px 20px;
+						}
+
+						&.social {
+
+							a {
+
+								i {
+									font-size: 30px;
+								}
+
+								&:hover {
+									opacity: 1;
+								}
+							}
+						}
+
 						&:last-child {
 
 							a {
