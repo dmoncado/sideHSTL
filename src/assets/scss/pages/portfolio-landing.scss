@@ -195,12 +195,9 @@
 		}
 
 		p {
-			margin: 0 auto 30px auto;
-			text-align: center;
-
-			@include media-breakpoint-up(md) {
-				width: 65%;
-			}
+			font-size: small;
+			color: $medium-grey;
+			margin-bottom: 0;
 		}
 
 		.row {
@@ -222,11 +219,6 @@
 
 				@include media-breakpoint-up(lg) {
 					@include make-col(6);
-				}
-
-				p {
-					text-align: left;
-					width: 80%;
 				}
 
 				&.stacked  {
