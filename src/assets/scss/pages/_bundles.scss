@@ -166,6 +166,21 @@
 							h3 {
 								color: $dark-navy;
 								@include hr-rule($light-grey);
+
+								span {
+									font-weight: 200;
+									display: inline-block;
+									text-transform: uppercase;
+									letter-spacing: 10px;
+									border-left: 1px solid $dark-navy;
+									margin-left: 6px;
+									padding-left: 12px;
+
+									@include media-breakpoint-up(lg) {
+										margin-left: 16px;
+										padding-left: 22px;
+									}
+								}
 							}
 						}
 
@@ -185,8 +200,31 @@
 
 						&__footer {
 
-							a {
-								@include brand-btn($dark-navy, #fff);
+							@include media-breakpoint-up(md) {
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+							}
+
+							&__actions {
+
+								a {
+									@include brand-btn($dark-navy, #fff);
+									margin-bottom: 15px;
+
+									@include media-breakpoint-up(md) {
+										margin-bottom: 0;
+									}
+								}
+							}
+
+							&__details {
+
+								p {
+									margin-bottom: 0;
+									font-size: small;
+									color: $medium-grey;
+								}
 							}
 						}
 					}
@@ -218,30 +256,6 @@
 
 					&--business-starter-kit-lite {
 
-						.bundles-card__content {
-
-							&__header {
-
-								h3 {
-
-									span {
-										font-weight: 200;
-										display: inline-block;
-										text-transform: uppercase;
-										letter-spacing: 10px;
-										border-left: 1px solid $dark-navy;
-										margin-left: 6px;
-										padding-left: 12px;
-
-										@include media-breakpoint-up(lg) {
-											margin-left: 16px;
-											padding-left: 22px;
-										}
-									}
-								}
-							}
-						}
-
 						// Adds extra badge icon
 						&::before {
 							content: "";
@@ -269,6 +283,20 @@
 
 						&::after {
 							background-image: url('../images/svg/services-vector-artwork.svg');
+						}
+					}
+
+					&--brand-me-lite {
+
+						&::after {
+							background-image: url('../images/svg/services-logos.svg');
+						}
+					}
+
+					&--influencer {
+
+						&::after {
+							background-image: url('../images/svg/services-social-media-content.svg');
 						}
 					}
 				}
