@@ -90,6 +90,18 @@
 	height: 100%;
 }
 
+// Price badge
+@mixin price-badge {
+	display: inline-block;
+	background-color: $light-grey;
+	font-family: $font-stack-helvetica;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 8px 18px;
+	color: $brand-green;
+	margin-bottom: 0;
+}
+
 @mixin faded-white {
 	color: rgba(255,255,255,0.7);
 }
