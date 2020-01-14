@@ -257,6 +257,10 @@
 				a {
 					@include brand-btn($dark-navy, #fff);
 				}
+
+				span {
+					@include price-badge;
+				}
 			}
 		}
 	}
