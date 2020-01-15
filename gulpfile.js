@@ -243,6 +243,7 @@ function concatScripts() {
 	  'src/assets/vendor/js/jquery.js',
 	  'src/assets/vendor/js/popper.js',
 	  'src/assets/vendor/js/bootstrap.js',
+	  'src/assets/vendor/js/all.js',
 	  'src/assets/vendor/js/slick.js',
 	  'src/assets/vendor/js/emergence.js',
 	  'src/assets/js/*'
@@ -270,7 +271,7 @@ function minifyScripts() {
 function minifyCss() {
   console.log('---------------MINIFY CSS---------------');
   return src([
-	  'src/assets/vendor/css/**/*',
+	  'src/assets/vendor/css/*',
 	  'dist/assets/css/main.css'
 	])
 	.pipe(sourcemaps.init())
