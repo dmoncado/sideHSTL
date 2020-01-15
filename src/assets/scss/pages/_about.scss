@@ -142,14 +142,39 @@
 				margin: 0 auto 25px auto;
 			}
 
-			a {
+			> a {
 				@include brand-btn($dark-navy, #fff);
-				margin-top: 15px;
+				display: inline-block;
+				margin-bottom: 15px;
 				opacity: 0;
 
 				&[data-emergence="visible"] {
 					-webkit-animation-name: bounceIn;
 					animation-name: bounceIn;
+				}
+			}
+
+			ul {
+				padding: 0;
+				margin: 0;
+				opacity: 0;
+
+				&[data-emergence="visible"] {
+					-webkit-animation-name: fadeIn;
+					animation-name: fadeIn;
+				}
+
+				li {
+					display: inline-block;
+
+					a {
+						padding: 0 5px;
+						color: $medium-grey;
+
+						&:hover {
+							opacity: 1;
+						}
+					}
 				}
 			}
 		}
