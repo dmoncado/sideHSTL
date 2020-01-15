@@ -291,4 +291,4 @@ exports.accessibility = HTMLAccessibility;
 exports.dev = series(cleanDist, copyFont, jsVendor, cssVendor, copyImages, compileHTML, compileJS, resetPages, prettyHTML, compileSCSS, browserSyncInit, watchFiles);
 
 // PROD
-exports.prod = series(cleanDist, compileSCSS, copyFont, copyImages, compileHTML, concatScripts, minifyScripts, minifyCss, renameSources, prettyHTML, browserSyncInit);
+exports.prod = series(cleanDist, copyFont, compileSCSS, copyImages, compileHTML, concatScripts, minifyScripts, minifyCss, renameSources, prettyHTML, browserSyncInit);

@@ -1,7 +1,7 @@
 {
-	"name": "quantum",
+	"name": "sideHSTL",
 	"version": "1.0.0",
-	"description": "Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.",
+	"description": "Have a side hustle or small business and need creative services? We can help. Welcome to sideHSTL Creative.",
 	"main": "index.js",
 	"scripts": {
 		"deploy": "gh-pages -d dist"
@@ -11,7 +11,7 @@
 	"homepage": "https://dmoncado.github.io/sideHSTL/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dmoncado/quantum"
+		"url": "https://github.com/dmoncado/sideHSTL"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.4",

@@ -4309,7 +4309,8 @@ readers do not read off random characters that represent icons */
   src: url("../../fonts/?#iefix") format("embedded-opentype"), url("../../fonts/fa-brands-400.woff2") format("woff2"), url("../../fonts/fa-brands-400.woff") format("woff"), url("../../fonts/fa-brands-400.ttf") format("truetype"), url("../../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
-  font-family: 'Font Awesome 5 Brands'; }
+  font-family: FontAwesome;
+  }
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
