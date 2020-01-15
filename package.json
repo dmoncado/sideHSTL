@@ -3,9 +3,12 @@
 	"version": "1.0.0",
 	"description": "Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync, hot reloading, and the Bourbon Sass library. All built on top of Handlebars.js for easy HTML templating.",
 	"main": "index.js",
-	"scripts": {},
+	"scripts": {
+		"deploy": "gh-pages -d dist"
+	},
 	"author": "Derick Moncado",
 	"license": "MIT",
+	"homepage": "https://dmoncado.github.io/sideHSTL/",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/dmoncado/quantum"
@@ -49,6 +52,7 @@
 		"bootstrap": "^4.3.1",
 		"clean-css": "^4.2.1",
 		"eslint": "^6.5.1",
+		"gh-pages": "^2.2.0",
 		"gulp": "^4.0.2",
 		"jquery": "^3.4.1",
 		"lodash": "^4.17.15",
