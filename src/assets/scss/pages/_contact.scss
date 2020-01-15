@@ -115,7 +115,7 @@
 		.not-accepting {
 			padding: 20px 25px 20px 40px;
 			font-size: 18px;
-			background-color: rgba(181, 57, 57, 0.2); 
+			background-color: rgba(181, 57, 57, 0.2);
 			border-radius: 8px;
 			color: red;
 			font-weight: bold;
@@ -407,6 +407,7 @@
 
 			p {
 				opacity: 1;
+				margin-bottom: 5px;
 
 				img {
 					width: 30px;
@@ -423,11 +424,8 @@
 
 					a {
 						padding-right: 15px;
-
-						i {
-							font-size: 30px;
-							color: $medium-grey;
-						}
+						font-size: 30px;
+						color: $medium-grey;
 
 						&:hover {
 							opacity: 1;
