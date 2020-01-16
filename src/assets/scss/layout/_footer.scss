@@ -8,16 +8,17 @@
 	.container {
 
 		.footer-contents {
+			text-align: center;
 
-			@include media-breakpoint-up(lg) {
+			@include media-breakpoint-up(xl) {
 				display: flex;
 			}
 
 			&__copyright {
-				display: flex;
-				align-items: center;
 
-				@include media-breakpoint-up(lg) {
+				@include media-breakpoint-up(xl) {
+					display: flex;
+					align-items: center;
 					width: 50%;
 					text-align: left;
 
@@ -30,27 +31,31 @@
 
 			&__links {
 
-				@include media-breakpoint-up(lg) {
+				@include media-breakpoint-up(xl) {
 					width: 50%;
 				}
 
 				ul {
 					@include clear-ul;
-					@include media-breakpoint-up(lg) {
+
+					@include media-breakpoint-up(xl) {
 						display: flex;
 						justify-content: flex-end;
 					}
 
 					li {
-						display: flex;
-						align-items: center;
+
+						@include media-breakpoint-up(xl) {
+							display: flex;
+							align-items: center;
+						}
 
 						a {
 							display: inline-block;
 							color: inherit;
 							padding: 15px 0;
 
-							@include media-breakpoint-up(lg) {
+							@include media-breakpoint-up(xl) {
 								padding: 20px 25px;
 							}
 						}
