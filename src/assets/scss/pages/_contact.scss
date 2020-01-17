@@ -87,25 +87,12 @@
 
 			p {
 				display: inline-block;
-				position: relative;
 				margin-bottom: 0;
-				padding-left: 30px;
 				font-family: $font-stack-helvetica;
 
-				&::before {
-					content: "\f164";
-					font-family: FontAwesome;
-					height: 28px;
-					width: 28px;
-					color: $brand-dark-green;
-					position: absolute;
-					left: -8px;
-					top: -4px;
-					font-style: normal;
-					font-weight: normal;
-					text-decoration: inherit;
+				.fa-check-circle {
 					font-size: 24px;
-					text-align: center;
+					margin-bottom: -2px;
 				}
 			}
 		}
@@ -122,27 +109,12 @@
 
 			p {
 				display: inline-block;
-				position: relative;
 				margin-bottom: 0;
-				padding-left: 30px;
 				font-family: $font-stack-helvetica;
 
-				&::before {
-					content: "\f00d";
-					font-family: FontAwesome;
-					height: 28px;
-					width: 28px;
-					border: 2px solid red;
-					color: red;
-					border-radius: 50%;
-					position: absolute;
-					left: -10px;
-					top: 0;
-					font-style: normal;
-					font-weight: normal;
-					text-decoration: inherit;
-					font-size: 16px;
-					text-align: center;
+				.fa-times-circle {
+					font-size: 24px;
+					margin-bottom: -2px;
 				}
 			}
 		}
