@@ -8,7 +8,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	color: #fff;
-	height: 250px;
+	height: 180px;
 	position: relative;
 
 	@include media-breakpoint-up(md) {
@@ -108,12 +108,12 @@
 
 			p {
 				color: $light-grey;
-				padding-right: 50px;
 			}
 
 			@include media-breakpoint-up(lg) {
 				width: 50%;
 				margin-bottom: 0;
+				padding-right: 50px;
 			}
 		}
 
