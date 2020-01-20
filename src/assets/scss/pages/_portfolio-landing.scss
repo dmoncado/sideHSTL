@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// Landing Page
+// Portfolio Landing Page
 // -----------------------------------------------------------------------------
 
 .landing-page-hero {
@@ -56,6 +56,10 @@
 
 	&--headshots {
 		background-image: url('../images/headshots-hero.jpg');
+	}
+
+	&--ecommerce-ad {
+		background-image: url('../images/ecommerce-ad-hero.jpg');
 	}
 
 	&::after {
