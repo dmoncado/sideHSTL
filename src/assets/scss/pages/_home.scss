@@ -9,7 +9,7 @@
 	background-repeat: no-repeat;
 	background-position-x: 0%;
 	color: #fff;
-	height: 130vh;
+	height: 132vh;
 	padding: 40px 0;
 	position: relative;
 
@@ -115,15 +115,22 @@
 				content: "";
 				position: absolute;
 				left: 50%;
-				top: -72px;
-				margin-left: -25px;
-				height: 30px;
-				width: 50px;
+				top: -50px;
+				margin-left: -20px;
+				height: 20px;
+				width: 40px;
 				z-index: 200;
 				background-image: url('../images/svg/arrow-down-white.svg');
 				background-size: contain;
 				background-position: center;
 				background-repeat: no-repeat;
+
+				@include media-breakpoint-up(md) {
+					top: -72px;
+					margin-left: -25px;
+					height: 30px;
+					width: 50px;
+				}
 			}
 		}
 	}
