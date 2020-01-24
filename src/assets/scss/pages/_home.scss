@@ -57,13 +57,14 @@
 
 		&__content {
 			z-index: 100;
+			padding: 10px 20px;
 
 			@include media-breakpoint-up(lg) {
 				width: 50%;
 			}
 
 			@include media-breakpoint-up(lg) {
-				padding: 40px;
+				padding: 30px;
 			}
 
 			.intro {
