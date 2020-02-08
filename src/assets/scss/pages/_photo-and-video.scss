@@ -244,11 +244,11 @@
 				span {
 					@include price-badge;
 
+					&.flat-rate,
 					&.starting-at {
 						position: relative;
 
 						&::before {
-							content: "Starting at";
 							position: absolute;
 							top: -17px;
 							left: 0;
@@ -260,6 +260,20 @@
 							display: inline-block;
 							font-weight: normal;
 							letter-spacing: 0.6px;
+						}
+					}
+
+					&.flat-rate {
+
+						&::before {
+							content: "Flat rate";
+						}
+					}
+
+					&.starting-at {
+
+						&::before {
+							content: "Starting at";
 						}
 					}
 				}
