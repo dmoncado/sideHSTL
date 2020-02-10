@@ -282,6 +282,14 @@ function minifyCss() {
 	.pipe(dest('dist/assets/css'));
 }
 
+// COPY CNAME FILE
+function copyCNAME() {
+  console.log('---------------COPY CNAME FILE---------------');
+  return src(['CNAME'])
+	.pipe(dest('dist/'))
+	.pipe(browserSync.stream());
+}
+
 // RUN ALL LINTERS
 exports.linters = series(htmlLint, scssLint, jsLint);
 
@@ -292,4 +300,4 @@ exports.accessibility = HTMLAccessibility;
 exports.dev = series(cleanDist, copyFont, jsVendor, cssVendor, copyImages, compileHTML, compileJS, resetPages, prettyHTML, compileSCSS, browserSyncInit, watchFiles);
 
 // PROD
-exports.prod = series(cleanDist, copyFont, compileSCSS, copyImages, compileHTML, concatScripts, minifyScripts, minifyCss, renameSources, prettyHTML, browserSyncInit);
+exports.prod = series(cleanDist, copyFont, compileSCSS, copyImages, compileHTML, concatScripts, minifyScripts, minifyCss, renameSources, prettyHTML, copyCNAME, browserSyncInit);
