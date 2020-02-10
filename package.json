@@ -8,10 +8,10 @@
 	},
 	"author": "Derick Moncado",
 	"license": "MIT",
-	"homepage": "https://dmoncado.github.io/sideHSTL/",
+	"homepage": "https://sidehstlcreative.com",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dmoncado/sideHSTL"
+		"url": "https://sidehstlcreative.com"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.4",
