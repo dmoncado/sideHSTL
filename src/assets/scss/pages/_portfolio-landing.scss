@@ -62,6 +62,10 @@
 		background-image: url('../images/ecommerce-ad-hero.jpg');
 	}
 
+	&--bts-photoshoot {
+		background-image: url('../images/bts-photoshoot-hero.jpg');
+	}
+
 	&::after {
 		content: " ";
 		z-index: 10;
