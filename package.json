@@ -19,7 +19,7 @@
 		"babel-core": "^6.26.3",
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
-		"browser-sync": "^2.26.7",
+		"browser-sync": "^2.27.10",
 		"cname": "0.0.3",
 		"csscomb": "^4.3.0",
 		"del": "^5.1.0",
